@@ -130,6 +130,9 @@ Plugin 'Wombat'
 " Yank history navigation
 Plugin 'YankRing.vim'
 
+" VimWiki :-)
+Plugin 'vimwiki/vimwiki'
+
 " ============================================================================
 " Install plugins the first time vim runs
 
