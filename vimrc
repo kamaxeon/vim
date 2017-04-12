@@ -155,9 +155,9 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-" highlight cursor line and column
-set cursorline
-set cursorcolumn
+" highlight cursor line and column, disable line and column
+" set cursorline
+" set cursorcolumn
 " hidden startup messages
 set shortmess=atI
 " auto read and write
