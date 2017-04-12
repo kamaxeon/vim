@@ -168,7 +168,7 @@ set confirm
 " no backup files
 set nobackup
 " other settings 
-set langmenu=zh_CN.UTF-8
+set langmenu=es_ES.UTF-8
 set mouse=a
 set whichwrap+=<,>,h,l,[,]
 set background=dark
@@ -196,7 +196,14 @@ set hlsearch
 " search ignore case
 set ignorecase
 " muting search highlighting 
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+" nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+
+" split navigations
+nnoemap <C-J> <C-W><C-J>
+nnoemap <C-K> <C-W><C-K>
+nnoemap <C-L> <C-W><C-L>
+nnoemap <C-H> <C-W><C-H>
 
 " syntax highlight on
 syntax on
