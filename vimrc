@@ -150,6 +150,9 @@ endif
 filetype plugin on
 filetype indent on
 
+" Change leader key
+:let mapleader = ","
+
 " tabs and spaces handling
 set expandtab
 set tabstop=4
@@ -200,10 +203,10 @@ set ignorecase
 
 
 " split navigations
-nnoemap <C-J> <C-W><C-J>
-nnoemap <C-K> <C-W><C-K>
-nnoemap <C-L> <C-W><C-L>
-nnoemap <C-H> <C-W><C-H>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " syntax highlight on
 syntax on
@@ -561,3 +564,17 @@ let g:vim_markdown_frontmatter=1
 " and when you open this, you can manually trigger preview
 " via the command :InstantMarkdownPreview
 let g:instant_markdown_autostart = 0
+
+
+" Keep indentation level from previous line:
+autocmd FileType python set autoindent
+"
+" " make backspaces more powerfull
+set backspace=indent,eol,start
+"
+"
+""Folding based on indentation:
+autocmd FileType python set foldmethod=indent
+"use space to open folds
+nnoremap <space> za
+
